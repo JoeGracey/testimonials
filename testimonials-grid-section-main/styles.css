@@ -1,5 +1,9 @@
 html {
-  background-color: grey;
+  background-color: hsl(210, 46%, 95%);
+}
+
+:root {
+  --br: 5%;
 }
 
 #main-container {
@@ -12,26 +16,51 @@ html {
 }
 
 .daniel-clifford-container {
-  background-color: #f4cccc;
+  background-color: hsl(263, 55%, 52%);
   grid-area: aaa;
+  border-radius: var(--br);
 }
 
 .jonathan-walters-container {
-  background-color: #fce5cd;
+  background-color: hsl(217, 19%, 35%);
   grid-area: bbb;
+  border-radius: var(--br);
 }
 
 .jeanette-harmon-container {
-  background-color: #d9ead3;
+  background-color: hsl(0, 0%, 81%);
   grid-area: ccc;
+  border-radius: var(--br);
 }
 
 .patrick-abrams-container {
-  background-color: #d0e0e3;
+  background-color: hsl(219, 29%, 14%);
   grid-area: ddd;
+  border-radius: var(--br);
 }
 
 .kira-whittle-container {
-  background-color: #d9d2e9;
+  background-color: hsl(0, 0%, 81%);
   grid-area: eee;
+  border-radius: var(--br);
+}
+
+.grey-one-text {
+  color: #c9c9c9;
+}
+
+.grey-two-text {
+  color: #969696;
+}
+
+.grey-three-text {
+  color: #4b4b4b;
+}
+
+.grey-four-text {
+  color: #121212;
+}
+
+img {
+  border-radius: 50%;
 }
