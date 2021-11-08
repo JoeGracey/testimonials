@@ -2,35 +2,36 @@ html {
   background-color: grey;
 }
 
-
-
-.main-container {
+#main-container {
   display: grid;
   grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "aaa aaa bbb eee"
+  "ccc ddd ddd eee";
 }
 
 .daniel-clifford-container {
-  border: 1px solid #707070;
-  grid-column: span 2;
+  background-color: #f4cccc;
+  grid-area: aaa;
 }
 
 .jonathan-walters-container {
-  border: 1px solid #707070;
-  grid-column: 3;
+  background-color: #fce5cd;
+  grid-area: bbb;
 }
 
 .jeanette-harmon-container {
-  border: 1px solid #707070;
-  grid-column: 1;
+  background-color: #d9ead3;
+  grid-area: ccc;
 }
 
 .patrick-abrams-container {
-  border: 1px solid #707070;
-  grid-column: span 2 / 4;
+  background-color: #d0e0e3;
+  grid-area: ddd;
 }
 
 .kira-whittle-container {
-  border: 1px solid #707070;
-  grid-column: 4;
-  grid-row: span 1 / 3;
+  background-color: #d9d2e9;
+  grid-area: eee;
 }
