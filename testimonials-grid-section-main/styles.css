@@ -1,66 +1,100 @@
 html {
   background-color: hsl(210, 46%, 95%);
+  font-family: sans-serif;
 }
 
 :root {
-  --br: 5%;
+  --br: 3%;
 }
 
 #main-container {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "aaa aaa bbb eee"
   "ccc ddd ddd eee";
 }
 
-.daniel-clifford-container {
+#name {
+  font-size: .75em;
+}
+
+#v-g {
+  font-size: .60em;
+}
+
+.daniel-container {
   background-color: hsl(263, 55%, 52%);
   grid-area: aaa;
   border-radius: var(--br);
 }
 
-.jonathan-walters-container {
+.jonathan-container {
   background-color: hsl(217, 19%, 35%);
   grid-area: bbb;
   border-radius: var(--br);
 }
 
-.jeanette-harmon-container {
+.jeanette-container {
   background-color: hsl(0, 0%, 81%);
   grid-area: ccc;
   border-radius: var(--br);
 }
 
-.patrick-abrams-container {
+.patrick-container {
   background-color: hsl(219, 29%, 14%);
   grid-area: ddd;
   border-radius: var(--br);
 }
 
-.kira-whittle-container {
+.kira-container {
   background-color: hsl(0, 0%, 81%);
   grid-area: eee;
   border-radius: var(--br);
 }
 
+.details {
+  margin: 25px;
+}
+
 .grey-one-text {
   color: #c9c9c9;
+  line-height: 1.5;
 }
 
 .grey-two-text {
   color: #969696;
+  font-size: .80em;
+  line-height: 1.5;
 }
 
 .grey-three-text {
   color: #4b4b4b;
+  font-size: .80em;
+  line-height: 1.5;
 }
 
 .grey-four-text {
   color: #121212;
+  line-height: 1.5;
 }
 
 img {
   border-radius: 50%;
+  width: 30px;
+  height: auto;
+  border: 2px solid #8e7cc3;
+}
+
+.d-name,
+.jo-name,
+.je-name,
+.p-name,
+.k-name {
+  display: inline-block;
+  line-height: .025em;
+  position: relative;
+  bottom: 7px;
+  left: 7px;
 }
